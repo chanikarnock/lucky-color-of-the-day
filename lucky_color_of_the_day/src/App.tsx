@@ -7,6 +7,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import 'dayjs/locale/de';
 import dayjs from 'dayjs';
+import GitComponent from './GitComponent';
 
 function App() {
   // const daysEN = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -33,7 +34,8 @@ function App() {
       </div>     
       <br></br>
       <ColorTable showMode={dateChoice}/>
-      </div>
+      <GitComponent />
+      </div>      
       </LocalizationProvider>
   );
 }

@@ -161,6 +161,26 @@ select {
   border-bottom: 2px solid #000000;
 }
 
+.git-component-container{
+  padding: .8em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.git-badge{
+  padding: 1em;
+  background-color: #ac7dbe;
+  color: #f7f5fc;
+  border-radius: 50px;
+  border: 1px solid white;
+}
+
+.git-badge:hover{
+  border: 1px solid #ac7dbe;
+  
+}
+
 @media screen and (max-width: 650px) {
   label {
     font-size: 0;
