@@ -30,8 +30,8 @@ const ColorTable = ({showMode}: {showMode: string}) => {
             {showMode=="3"? <DatePicker 
             label="ระบุวันที่"
             format="DD - MM - YYYY"
-            defaultValue={dayjs(new Date())}
-            onChange={(newValue) => setfocusDate(newValue?.toDate())}/>
+            value={dayjs(new Date())}
+            onChange={(newValue) => setfocusDate(newValue!.toDate())}/>
             :<h2 className="day-label">ประจำวัน{daysTH[focusDate.getDay()]}ที่ {focusDate.getDate()} {monthTH[focusDate.getMonth()]}</h2>}                                 
             <br />
             <div className="fortuneteller-label">เลือกนักพยากรณ์🔮</div>
