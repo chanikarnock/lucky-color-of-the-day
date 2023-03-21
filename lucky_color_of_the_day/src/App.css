@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Chonburi&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bai Jamjuree', 'Quicksand', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: linear-gradient(-45deg, #d16ba5, #c49cd4, #c3c5e9, #d9e7ef);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-family: 'Chonburi', cursive;
+  padding: 50px 0;
+  font-weight: 400;
+  text-align: center;
+  background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+input {
+  display: none;
+}
+
+
+.datePicker {
+  width: 100%;
+}
+
+select {  
+  padding: 3px;
+}
+
+.App{
+  width: 75vw;
+}
+
+.header {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3em;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.color-table-show{
+  display: grid;
+  background: #fff;
+  border-radius: 0px 0px 50px 50px;
+  padding: 25px;
+  margin-top: -15px;
+  padding-bottom: 4em;
+}
+
+.day-label{
+  font-family: 'Chonburi', cursive;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.source-container{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.source-container a{
+  padding: 5px;
+  width: 15em;
+  background-color: #ba83ca;
+  border-radius: 15px;
+  color: #f7f5fc;
+}
+
+.source-container a:hover{
+  color: #f7f5fc;
+  background-color: #9760ad;
+}
+
+.styled-table, .omen-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1em;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15)
+}
+
+.styled-table .thread-header {
+  background-color: #8fd3f4;
+  color: #ffffff;
+  text-align: center;
+}
+
+.omen-table .thread-header {
+  background-color: #131313;
+  color: #ffffff;
+  text-align: center;
+}
+
+.styled-table th,
+.styled-table td,
+.omen-table th,
+.omen-table td {
+    padding: 12px 15px;
+}
+
+.styled-table td:not(:first-child) {
+  border-left: 2px dotted #dddddd;
+}
+
+.styled-table tbody tr,
+.omen-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  
+}
+
+.styled-table tbody tr:nth-of-type(even),
+.omen-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #000000;
+}
+
+@media screen and (max-width: 650px) {
+  label {
+    font-size: 0;
+  }
+
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+
+  .App{
+    max-width: 100vw;
+  }
+
+  label {
+    padding: 15px;
+  }
+
+}
